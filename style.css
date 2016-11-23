@@ -157,6 +157,10 @@ nav {
 	color: #fff;
 }
 
+.about-massage-block .send-mail:hover {
+	background-color: #fda468;
+}
+
 .header-text-secondary {
 	color: #FABB90;
 	font-size: 26px;
@@ -311,7 +315,7 @@ input {
 }
 
 .send-mail:hover {
-	background-color: #fda468;
+	background-color: #c68a69;
 	transition: 0.5s ease;
 	color: #fff;
 }
