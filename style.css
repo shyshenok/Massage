@@ -142,7 +142,7 @@ nav {
 	color: #60606e;
     font-size: 17px;
     padding-top: 10px;
-    margin-bottom: 0;
+     margin-bottom: 30px;
     text-align: right;
 }
 
@@ -150,6 +150,11 @@ nav {
 	border: 3px solid #EFEFEF;
 	padding: 20px 30px;
 	margin-bottom: 20px;
+}
+
+.about-massage-block .send-mail {
+	background-color: #FABB90;
+	color: #fff;
 }
 
 .header-text-secondary {
@@ -306,9 +311,8 @@ input {
 }
 
 .send-mail:hover {
-	box-shadow: 0 0 14px 2px #fff;
-	background-color: #FABB90;
-	transition: 0.8s ease;
+	background-color: #fda468;
+	transition: 0.5s ease;
 	color: #fff;
 }
 
