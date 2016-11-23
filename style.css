@@ -107,9 +107,22 @@ nav {
 	color: #60606E;
 }
 
+.slide-color {
+	background-color: rgba(250, 187, 144, 0.1 );
+}
+
 .text-on-slider {
-	display: none;
-	font-size: 0;
+	display: block;
+	position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Marck Script', cursive;
+	text-align: center;
 }
 
 .wrapper-content,
@@ -364,17 +377,7 @@ footer {
 
 @media (min-width: 450px) {
 	.text-on-slider {
-		display: block;
-	    position: absolute;
-        top: 43%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-	    color: #fff;
 	    font-size: 36px;
-	    font-weight: bold;
-	    font-family: 'Marck Script', cursive;
-	    text-align: center;
 	}
 }
 
@@ -494,6 +497,9 @@ footer {
 
 	.about-massage-block {
 		width: 40%;
+		display: flex;
+   		flex-flow: column wrap;
+    	justify-content: space-between;
 	}
 
 	.wrapper-comment-block {
