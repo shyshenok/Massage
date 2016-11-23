@@ -30,7 +30,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('body').click(function (event) {
+/*	$('body').click(function (event) {
 		if ($('#btn-menu').is(":visible") && 
 			event.target.id !== "btn-menu") {
 			menu.classList.remove(MENU_VISIBLE);
@@ -38,7 +38,7 @@ $(document).ready(function(){
 			flag = false;
 			btnMenu.style.cssText += "color: #60606E;";
 		} 		
-	});
+	});*/
 
 	$('#sendMail').click(function(){
 
