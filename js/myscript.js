@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 	$('#sendMail').click(function(){
 
-		var mailLink = "mailto:email@open-art.com"+
+		var mailLink = "mailto:charivna_feya@ukr.net"+
 					"?subject="+
 					encodeURIComponent(
 						"[" + 

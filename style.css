@@ -107,10 +107,6 @@ nav {
 	color: #60606E;
 }
 
-.slide-color {
-	background-color: rgba(250, 187, 144, 0.1 );
-}
-
 .text-on-slider {
 	display: block;
 	position: absolute;
@@ -153,21 +149,22 @@ nav {
 
 .price-text {
 	color: #60606e;
-    font-size: 17px;
+    font-size: 21px;
     padding-top: 10px;
-     margin-bottom: 30px;
-    text-align: right;
+    margin: 30px 0;
+    text-align: center;
 }
 
 .about-massage-block {
 	border: 3px solid #EFEFEF;
-	padding: 20px 30px;
+	padding: 20px;
 	margin-bottom: 20px;
 }
 
 .about-massage-block .send-mail {
 	background-color: #FABB90;
 	color: #fff;
+	margin: 26px auto 0;
 }
 
 .header-text-secondary {
@@ -188,7 +185,7 @@ nav {
 .wrapper-comments{
 	border-radius: 4px;
 	margin: 10px 0 14px;
-	padding: 20px 40px 10px;
+	padding: 20px 30px 10px;
 }
 
 .img-wrap{
@@ -402,7 +399,7 @@ footer {
 	.about-massage-block {
 		width: 70%;
 		margin: 30px auto;
-		padding: 20px 40px;
+		padding: 20px 25px;
 	}
 
 	.wrapper-comment-block {
@@ -500,6 +497,11 @@ footer {
 		display: flex;
    		flex-flow: column wrap;
     	justify-content: space-between;
+    	padding: 20px 30px;
+	}
+
+	.about-massage-block .header-text-secondary {
+	    margin: 24px 0 0;
 	}
 
 	.wrapper-comment-block {
