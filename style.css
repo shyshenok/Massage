@@ -493,7 +493,7 @@ footer {
 	}
 
 	.about-massage-block {
-		width: 40%;
+		width: 48%;
 		display: flex;
    		flex-flow: column wrap;
     	justify-content: space-between;
