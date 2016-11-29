@@ -50,6 +50,15 @@ nav {
 	order: 2;
 }
 
+.header {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    z-index: 200;
+}
+
 .menu {
 	min-width: 320px;
 	opacity: 0.8;
@@ -119,6 +128,10 @@ nav {
 	font-weight: bold;
 	font-family: 'Marck Script', cursive;
 	text-align: center;
+}
+
+.slider {
+	margin-top: 90px;
 }
 
 .wrapper-content,
@@ -383,7 +396,7 @@ footer {
 		width: 100%;
 	}
 
-	header {
+	.wrapper-header-menu {
 		margin: 0 auto;
 	}
 
@@ -471,7 +484,7 @@ footer {
 		width: 100%;
 	}
 
-	header {
+	.wrapper-header-menu {
 		width: 960px;
 		margin: 0 auto;
 	}
@@ -493,7 +506,7 @@ footer {
 	}
 
 	.about-massage-block {
-		width: 48%;
+		width: 44%;
 		display: flex;
    		flex-flow: column wrap;
     	justify-content: space-between;

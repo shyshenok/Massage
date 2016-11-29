@@ -34,33 +34,33 @@ $(document).ready(function(){
 		if ($('#btn-menu').is(":visible") && 
 			event.target.id !== "btn-menu") {
 			menu.classList.remove(MENU_VISIBLE);
-			menu.classList.add(MENU_INVISIBLE);
-			flag = false;
-			btnMenu.style.cssText += "color: #60606E;";
-		} 		
-	});
+		menu.classList.add(MENU_INVISIBLE);
+		flag = false;
+		btnMenu.style.cssText += "color: #60606E;";
+	} 		
+});
 
 	$('#sendMail').click(function(){
 
 		var mailLink = "mailto:charivna_feya@ukr.net"+
-					"?subject="+
-					encodeURIComponent(
-						"[" + 
-						$('#type').val() +
-						 "] " + 
-						 $('#name').val()
-					) + 
-					"&body=" +
-					encodeURIComponent($('#comments').val());
+		"?subject="+
+		encodeURIComponent(
+			"[" + 
+			$('#type').val() +
+			"] " + 
+			$('#name').val()
+			) + 
+		"&body=" +
+		encodeURIComponent($('#comments').val());
 
 		window.open(mailLink, '_self');			
 	});
 
 	$('a[href^="#"]').click(function(){
-        var el = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(el).offset().top}, 800);
-        return false; 
+		var el = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(el).offset().top}, 800);
+		return false; 
 	});	
 
 	$('#change-ru').change(function(){
@@ -73,4 +73,5 @@ $(document).ready(function(){
 			$("[data-localize]").localize("localize", { language: "en" })
 		};
 	});
+
 });
