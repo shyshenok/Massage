@@ -164,25 +164,27 @@
 		</div>
 	</section>
 	<section class="wrapper-form" id="form">
-		<h2 class="header-text" data-localize="get-massage">Записаться на массаж</h2>
-		<div class="wrapper-all-form">
-			<div class="wrapper-index">
-				<div class="all-input">
-					<input id="name" type="text" name="name" placeholder="ВАШЕ ИМЯ / NAME"/>
-					<input id="mail-phone" type="mail" name="mail" placeholder="ВАШ ТЕЛЕФОН ИЛИ E-MAIL"/>
-					<select id="type">
-						<option value="Type" data-localize="type-massage">Вид массажа</option>
-					  	<option value="Osteopathy" data-localize="massage1">Остеопатия</option>
-					  	<option value="Classical" data-localize="massage2">Классический массаж</option>
-					  	<option value="Honey" data-localize="massage3">Медовый массаж</option>
-					  	<option value="Thai" data-localize="massage4">Тайский массаж</option>
-					  	<option value="Craniosacral" data-localize="massage5">Кранио-сакральная терапия</option>
-					</select>
-					<textarea id="comment" placeholder="КОММЕНТАРИИ К ЗАЯВКЕ / COMMENTS"></textarea>
-					<p id="sendMail" class="send-mail" data-localize="get-it">Записаться</p>
-				</div>
-			</div>
-		</div>
+        <form action="http://146.185.176.42:3000/api/v1/orders" method="post">
+            <h2 class="header-text" data-localize="get-massage">Записаться на массаж</h2>
+            <div class="wrapper-all-form">
+                <div class="wrapper-index">
+                    <div class="all-input">
+                        <input id="name" type="text" name="name" placeholder="ВАШЕ ИМЯ / NAME"/>
+                        <input id="mail-phone" type="mail" name="mail" placeholder="ВАШ ТЕЛЕФОН ИЛИ E-MAIL"/>
+                        <select id="type">
+                            <option value="Type" data-localize="type-massage">Вид массажа</option>
+                            <option value="Osteopathy" data-localize="massage1">Остеопатия</option>
+                            <option value="Classical" data-localize="massage2">Классический массаж</option>
+                            <option value="Honey" data-localize="massage3">Медовый массаж</option>
+                            <option value="Thai" data-localize="massage4">Тайский массаж</option>
+                            <option value="Craniosacral" data-localize="massage5">Кранио-сакральная терапия</option>
+                        </select>
+                        <textarea id="comment" placeholder="КОММЕНТАРИИ К ЗАЯВКЕ / COMMENTS"></textarea>
+                        <button type="submit" id="sendMail" class="send-mail" data-localize="get-it">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </form>
 	</section>
 	<section class="wrapper-contact" id="contacts">
 		<h2 class="header-text" data-localize="contacts">Контакты</h2>
