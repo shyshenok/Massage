@@ -42,24 +42,29 @@ $(document).ready(function(){
 
 	$('#sendMail').click(function(){
 
-		var mailLink = "mailto:charivna_feya@ukr.net"+
-		"?subject="+
-		encodeURIComponent(
-			"[" + 
-			$('#type').val() +
-			"] " + 
-			$('#name').val()
-			) + 
-		"&body=" +
-		encodeURIComponent($('#comments').val());
+		// var mailLink = "mailto:charivna_feya@ukr.net"+
+		// "?subject="+
+		// encodeURIComponent(
+		// 	"[" + 
+		// 	$('#type').val() +
+		// 	"] " + 
+		// 	$('#name').val()
+		// 	) + 
+		// "&body=" +
+		// encodeURIComponent($('#comments').val());
 
-		window.open(mailLink, '_self');			
+		//window.open(mailLink, '_self');		
+
+		var mailObj = {
+			"type": $('#type').val(),
+			"name": $('#name').val(),
+			"comments": $('#comment').val()
+		};	
 	});
 
 	$('a[href^="#"]').click(function(){
 		var el = $(this).attr('href');
-		$('html, body').animate({
-			scrollTop: $(el).offset().top}, 800);
+		$('html, body').animate({scrollTop: $(el).offset().top}, 800);
 		return false; 
 	});	
 

@@ -169,10 +169,16 @@
 			<div class="wrapper-index">
 				<div class="all-input">
 					<input id="name" type="text" name="name" placeholder="ВАШЕ ИМЯ / NAME"/>
-					<input id="type" type="text" name="object" placeholder="ВИД МАССАЖА / TYPE OF MASSAGE"/>
-					<textarea id="comments" placeholder="КОММЕНТАРИИ К ЗАЯВКЕ / COMMENTS"></textarea>
+					<select id="type">
+						<option value="Osteopathy" data-localize="type-massage">Вид массажа</option>
+					  	<option value="Osteopathy" data-localize="massage1">Остеопатия</option>
+					  	<option value="saab" data-localize="massage2">Классический массаж</option>
+					  	<option value="mercedes" data-localize="massage3">Медовый массаж</option>
+					  	<option value="audi" data-localize="massage4">Тайский массаж</option>
+					  	<option value="audi" data-localize="massage5">Кранио-сакральная терапия</option>
+					</select>
+					<textarea id="comment" placeholder="КОММЕНТАРИИ К ЗАЯВКЕ / COMMENTS"></textarea>
 					<p id="sendMail" class="send-mail" data-localize="get-it">Записаться</p>
-					<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQ2nczwCvzHgYHEucQFhTeU658d8vzOI9yfCw-ngOT0XXZHQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe> -->
 				</div>
 			</div>
 		</div>
@@ -195,7 +201,7 @@
 	<footer>
 
 		<section class="copyright-block">
-			<p class="copyright">Design and development by Shyshenok</p>
+			<p class="copyright">Design and development by <a href="https://shyshenok.github.io">shyshenok</a></p>
 		</section>
 	</footer>
 

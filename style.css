@@ -206,13 +206,13 @@ nav {
 	padding-top: 20px;
 }
 
-.wrapper-comments{
+.wrapper-comments {
 	border-radius: 4px;
 	margin: 10px 0 14px;
 	padding: 20px 30px 10px;
 }
 
-.img-wrap{
+.img-wrap {
 	width: 100px;
 	height: 100px;
 	margin: 0 auto;
@@ -306,20 +306,25 @@ nav {
 	padding: 10px;
 }
 
-input {
+input,
+select {
 	padding: 10px;
 }
 
 .wrapper-index input,
-.wrapper-index textarea {
+.wrapper-index textarea,
+.wrapper-index select {
 	margin-top: 26px;
 	width: 100%;
 	background-color: #fefcf9;
 	border: 1px solid #e5e5e5;
 	font-family: "open sans";
+	color: #60606E;
+	text-transform: uppercase;
 }
 
-.wrapper-index input {
+.wrapper-index input,
+.wrapper-index select {
 	height:50px;
 }
 
@@ -396,6 +401,14 @@ footer {
 	float: right;
 }
 
+.copyright-block a {
+	color: #fff;
+}
+
+.copyright-block a:hover {
+	color: grey;
+}
+
 @media (min-width: 450px) {
 	.text-on-slider {
 	    font-size: 36px;
@@ -427,7 +440,7 @@ footer {
 	}
 
 	.wrapper-comment-block {
-		flex-flow: row wrap;
+		flex-flow: row wrap;x
 		justify-content: center;
 	}
 
@@ -450,11 +463,11 @@ footer {
 
 	.wrapper-index input,
 	.wrapper-index textarea,
+	.wrapper-index select,
 	.send-mail {
 		width: 70%;
 		margin: 16px auto;
 	}
-
 }
 
 @media (min-width: 660px) {
@@ -578,7 +591,7 @@ footer {
 	.wrapper-photo {
 		order:2;
 		width: 300px;
-		height: 400px;
+		height: 350px;
 		border-radius: 0;
 		margin: 0;
 		background-color: transparent;
