@@ -123,7 +123,8 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-	color: #fff;
+	color: #66282e;
+	opacity: 0.8;
 	font-size: 20px;
 	font-weight: bold;
 	font-family: 'Marck Script', cursive;
@@ -520,8 +521,12 @@ footer {
 	.wrapper-comment-block {
 		width: 960px;
 		margin: 0 auto;
-    	flex-flow: row nowrap;
+    	flex-flow: row wrap;
     	padding-bottom: 30px;
+	}
+
+	.wrapper-comments {
+		width: 33%;
 	}
 	
 	.wrapper-certificates {
