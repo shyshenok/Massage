@@ -1,3 +1,9 @@
+var SERVER_PROTOCOL = 'http';
+var SERVER_HOST = '146.185.176.42';
+var SERVER_PORT = 3000;
+var API_PATH = '/api/v1';
+
+
 $(document).ready(function(){
 	$('.bxslider').bxSlider({
 		auto: true
@@ -60,7 +66,22 @@ $(document).ready(function(){
 			"name": $('#name').val(),
 			"mail_phone": $('#mail-phone').val(),
 			"comments": $('#comment').val()
-		};	
+		};
+
+		if (!mailObj.mail_phone) {
+      alert('Пожалуйста, введите email или номер телефона для обратной связи\n' +
+        'Please, enter an email or phone number for callback');
+      return;
+    }
+
+    const url = SERVER_PROTOCOL + '://' + SERVER_HOST + ':' +
+      SERVER_PORT + API_PATH + '/orders';
+
+    console.log('url', url);
+
+    $.post(url, mailObj);
+
+		console.log('mail obj', mailObj);
 	});
 
 	$('a[href^="#"]').click(function(){
