@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirection</title>
+</head>
+<body>
+    Ваш заказ успешно обработан, с Вами свяжутся в ближайшее время.
+    Вы будете перенаправлены на главную страницу в течении 5 секунд
+
+    <script>
+        setTimeout(function () {
+            window.history.back();
+        }, 5000);
+    </script>
+</body>
+</html>

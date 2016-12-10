@@ -409,6 +409,10 @@ footer {
 	color: grey;
 }
 
+button[type=submit] {
+    border-width: 0;
+}
+
 @media (min-width: 450px) {
 	.text-on-slider {
 	    font-size: 36px;
