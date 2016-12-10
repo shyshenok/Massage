@@ -58,6 +58,7 @@ $(document).ready(function(){
 		var mailObj = {
 			"type": $('#type').val(),
 			"name": $('#name').val(),
+			"mail_phone": $('#mail-phone').val(),
 			"comments": $('#comment').val()
 		};	
 	});
