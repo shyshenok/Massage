@@ -164,14 +164,14 @@
 		</div>
 	</section>
 	<section class="wrapper-form" id="form">
-        <form action="http://146.185.176.42:3000/api/v1/orders" method="post">
+        <form action="http://146.185.176.42:80/api/v1/orders" method="post">
             <h2 class="header-text" data-localize="get-massage">Записаться на массаж</h2>
             <div class="wrapper-all-form">
                 <div class="wrapper-index">
                     <div class="all-input">
                         <input id="name" type="text" name="name" placeholder="ВАШЕ ИМЯ / NAME"/>
                         <input id="mail-phone" type="mail" name="mail" placeholder="ВАШ ТЕЛЕФОН ИЛИ E-MAIL"/>
-                        <select id="type">
+                        <select id="type" name="type">
                             <option value="Type" data-localize="type-massage">Вид массажа</option>
                             <option value="Osteopathy" data-localize="massage1">Остеопатия</option>
                             <option value="Classical" data-localize="massage2">Классический массаж</option>
@@ -179,7 +179,7 @@
                             <option value="Thai" data-localize="massage4">Тайский массаж</option>
                             <option value="Craniosacral" data-localize="massage5">Кранио-сакральная терапия</option>
                         </select>
-                        <textarea id="comment" placeholder="КОММЕНТАРИИ К ЗАЯВКЕ / COMMENTS"></textarea>
+                        <textarea id="comment" name="comments" placeholder="КОММЕНТАРИИ К ЗАЯВКЕ / COMMENTS"></textarea>
                         <button type="submit" id="sendMail" class="send-mail" data-localize="get-it">Записаться</button>
                     </div>
                 </div>
