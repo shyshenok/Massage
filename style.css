@@ -366,7 +366,6 @@ textarea:focus {
 }
 
 .contact {
-	order: 2;
 	display: flex;
 	flex-flow: column nowrap;
 	margin: 20px auto;
@@ -380,7 +379,6 @@ textarea:focus {
 }
 
 .wrapper-photo {
-	order:1;
 	width: 230px;
 	height: 230px;
 	border-radius: 50%;
@@ -411,6 +409,34 @@ footer {
 
 button[type=submit] {
     border-width: 0;
+}
+
+.wrapper-photo .comments-header-text {
+	color: #60606e;
+	font-size: 20px;
+}
+
+.redirect {
+	display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
+
+.redirect p {
+	padding: 0 20px;
 }
 
 @media (min-width: 450px) {
@@ -471,6 +497,12 @@ button[type=submit] {
 	.send-mail {
 		width: 70%;
 		margin: 16px auto;
+	}
+
+	.redirect {
+		height: 70%;
+		width: 70%;
+		font-size: 24px;
 	}
 }
 
@@ -588,18 +620,15 @@ button[type=submit] {
 	}
 
 	.contact {
-		order: 1;
 		margin: 0;
 	}
 
-	.wrapper-photo {
-		order:2;
+	.wrapper-photo  {
 		width: 300px;
 		height: 350px;
 		border-radius: 0;
 		margin: 0;
 		background-color: transparent;
 	}
-
 
 }
