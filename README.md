@@ -9,6 +9,5 @@
 ![2](/view/2m.png)
 ![3](/view/3m.png)
 ![4](/view/4m.png)
-![1](/view/5m.png)
 ![2](/view/6m.png)
 ![3](/view/7m.png)
