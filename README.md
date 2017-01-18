@@ -1,11 +1,11 @@
 #[Link on site](http://kstmassage.com/)
-#Desctop wersion
+#Desktop version
 ![1](/view/1.png)
 ![2](/view/2.png)
 ![3](/view/3.png)
 ![4](/view/4.png)
 
-#Mobile wersion
+#Mobile version
 ![1](/view/1m.png)
 ![2](/view/2m.png)
 ![3](/view/3m.png)
