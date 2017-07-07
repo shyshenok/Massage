@@ -302,7 +302,7 @@ nav {
 }
 
 .wrapper-all-form,
-.all-input, {
+.all-input {
 	padding: 10px;
 }
 
@@ -470,7 +470,7 @@ button[type=submit] {
 	}
 
 	.wrapper-comment-block {
-		flex-flow: row wrap;x
+		flex-flow: row wrap;
 		justify-content: center;
 	}
 

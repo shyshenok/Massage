@@ -48,47 +48,6 @@ $(document).ready(function(){
 	} 		
 });
 
-	// $('#sendMail').click(function(){
-  //
-	// 	// var mailLink = "mailto:charivna_feya@ukr.net"+
-	// 	// "?subject="+
-	// 	// encodeURIComponent(
-	// 	// 	"[" +
-	// 	// 	$('#type').val() +
-	// 	// 	"] " +
-	// 	// 	$('#name').val()
-	// 	// 	) +
-	// 	// "&body=" +
-	// 	// encodeURIComponent($('#comments').val());
-  //
-	// 	//window.open(mailLink, '_self');
-  //
-	// 	var mailObj = {
-	// 		"type": $('#type').val(),
-	// 		"name": $('#name').val(),
-	// 		"mail_phone": $('#mail-phone').val(),
-	// 		"comments": $('#comment').val()
-	// 	};
-  //
-	// 	if (!mailObj.mail_phone) {
-   //    alert('Пожалуйста, введите email или номер телефона для обратной связи\n' +
-   //      'Please, enter an email or phone number for callback');
-   //    return;
-   //  }
-  //
-   //  const url = SERVER_PROTOCOL + '://' + SERVER_HOST + ':' +
-   //    SERVER_PORT + API_PATH + '/orders';
-  //
-   //  console.log('url', url);
-  //
-   //  $.post(url, mailObj)
-   //    .then(function (response) {
-   //      console.log(response)
-   //    });
-  //
-	// 	console.log('mail obj', mailObj);
-	// });
-
 	$('a[href^="#"]').click(function(){
 		var el = $(this).attr('href');
 		$('html, body').animate({scrollTop: $(el).offset().top}, 800);
